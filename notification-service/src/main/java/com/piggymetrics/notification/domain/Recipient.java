@@ -18,7 +18,6 @@ public class Recipient {
 	@Email
 	private String email;
 	
-	@Phone
 	private String phone;
 
 	@Valid
