@@ -19,6 +19,8 @@ public class Recipient {
 	private String email;
 	
 	private String phone;
+	
+	private String address;
 
 	@Valid
 	private Map<NotificationType, NotificationSettings> scheduledNotifications;
@@ -46,6 +48,14 @@ public class Recipient {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public Map<NotificationType, NotificationSettings> getScheduledNotifications() {
 		return scheduledNotifications;
@@ -61,6 +71,7 @@ public class Recipient {
 				"accountName='" + accountName + '\'' +
 				", email='" + email + '\'' +
 				", phone='" + phone + '\'' +
+				", address='" + address + '\'' +
 				'}';
 	}
 }
